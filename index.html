@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Home Group. Ведутся работы по созданию сайта.">
+  <meta name="theme-color" content="#17669b">
+  <title>Home Group — сайт в разработке</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(#17669b, #172619) fixed;
+      color: #fff;
+      font-family: system-ui, sans-serif;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      height: 100svh;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    @media (max-aspect-ratio: 43/100) {
+      img {
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <picture>
+      <source media="(max-aspect-ratio: 1/1)" srcset="home-group-mobile.webp" width="940" height="1672">
+      <img src="home-group-desktop.webp" width="1672" height="941" fetchpriority="high"
+           alt="Home Group. Ведутся работы по созданию сайта.">
+    </picture>
+  </main>
+</body>
+</html>
